@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\Admin\Desktop\DSE\4. WD211\Project v3/Untitled-1.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <style>
+        /*-----------------------------------------------*/
+        /* for title "welcome to my space"*/
+        
+        .header {
+            margin: 0;
+            color: black;
+            position: absolute;
+            top: 41%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-family: 'Noto Serif Display', serif;
+            font-size: 80px;
+            border-bottom: 3px solid black;
+            padding: 15px;
+            padding-bottom: 30px;
+            width: 820px;
+            font-weight: 600;
+            line-height: 1.0;
+            text-shadow: 4px 2px yellow
+        }
+        /*background pic*/
+        
+        body {
+            background-image: url('DSC_0045-Edit.jpg');
+            background-size: cover;
+        }
+        /* border */
+        
+        .container {
+            height: 940px;
+            position: center;
+            border: 5px solid black;
+        }
+        /*positioning code*/
+        
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        /*-----------------------------------------------*/
+        /*-----------------------------------------------*/
+        
+        .button {
+            font-family: 'Alice', serif;
+            border: none;
+            color: Black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 10px 12px;
+            cursor: pointer;
+            background-color: yellow;
+            list-style: none;
+            padding: 8px;
+            width: 264px;
+            letter-spacing: 2px
+        }
+        
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        
+        .button span:after {
+            content: '\203A';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        
+        .button:hover span {
+            padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        
+        .button:hover {
+            background-color: white;
+            color: black;
+        }
+        /*-----------------------------------------------*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Welcome <br />to my space.</h1>
+        <div class="center">
+            <button class="button" onclick="document.location='Overview.html'"><span>OVERVIEW</span></button>
+            <button class="button" onclick="document.location='About.html'"><span>ABOUT</span></button>
+            <button class="button" onclick="document.location ='Contact.html'"><span>CONTACT</span></button>
+        </div>
+    </div>
+</body>
+
+</html>

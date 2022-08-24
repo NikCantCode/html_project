@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Enquiry</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\Admin\Desktop\DSE\4. WD211/Project v3/Untitled-1.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <style>
+        /*-----------------------------------------------*/
+        
+        .header {
+            background-color: white;
+            text-align: center;
+            padding: 80px 20px 50px 20px;
+        }
+        /*     contain area     */
+        
+        .container {
+            font-family: 'Alice', serif;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: 800px;
+            width: 1300px;
+            text-align: center;
+        }
+        /*-----------------------------------------------*/
+        /*-----------------------------------------------*/
+        
+        .button {
+            font-family: 'Alice', serif;
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 22px;
+            margin: 10px 12px;
+            cursor: pointer;
+            background-color: white;
+            list-style: none;
+            padding: 5px;
+            width: 256px;
+            letter-spacing: 2px
+        }
+        /*     for button effect     */
+        /*     button go left     */
+        
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        /*     for > come out     */
+        
+        .button span:after {
+            content: '\203A';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+        }
+        
+        .button:hover span {
+            padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        /*     button hover effect     */
+        
+        .button:hover {
+            background-color: yellow;
+            color: black;
+        }
+        /*-----------------------------------------------*/
+        /*-----------------------------------------------*/
+        
+        form {
+            text-align: center;
+            font-family: 'Alice', serif;
+            font-size: 20px;
+            letter-spacing: 2px
+        }
+        
+        input {
+            padding: 15px;
+            width: 800px;
+            margin: 30px;
+            border: 1px solid lightgray
+        }
+        
+        h1 {
+            letter-spacing: 3px;
+            padding: 20px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid black;
+        }
+        /*-----------------------------------------------*/
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <button class="button" onclick="document.location='index.html'"><span>HOME</span></button>
+        <button class="button" onclick="document.location='Overview.html'"><span>OVERVIEW</span></button>
+        <button class="button" onclick="document.location='About.html'"><span>ABOUT</span></button>
+        <button class="button" onclick="document.location='Contact.html'"><span>CONTACT</span></button>
+    </div>
+
+    <div class="container">
+        <h1>ENQUIRY</h1>
+        <form>
+            <label for="fname">First Name :</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name :</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="lname">Email :</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="lname">Phone :</label><br>
+            <input type="text" id="lname" name="lname"><br>
+        </form>
+        <button class="button"><span>Submit</span></button>
+    </div>
+</body>
+
+</html>

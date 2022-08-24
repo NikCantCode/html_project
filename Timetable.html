@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Timetable</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\Admin\Desktop\DSE\4. WD211\Project v3/Untitled-1.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <style>
+/*-----------------------------------------------*/
+        .header {
+            background-color: white;
+            text-align: center;
+            padding: 80px 20px 50px 20px;
+        }
+/*     contact area     */
+        .container {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: 800px;
+            width: 1300px;
+        }
+/*-----------------------------------------------*/
+
+/*-----------------------------------------------*/
+        .button {
+            font-family: 'Alice', serif;
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 22px;
+            margin: 10px 12px;
+            cursor: pointer;
+            background-color: white;
+            list-style: none;
+            padding: 5px;
+            width: 256px;
+            letter-spacing: 2px
+        }
+/*     for button effect     */
+/*     button go left     */
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+/*     for > come out     */
+                .button span:after {
+                    content: '\203A';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -10px;
+                    transition: 0.5s;
+                }
+            .button:hover span {
+                padding-right: 25px;
+            }
+                .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+/*     button hover effect     */
+            .button:hover {
+                background-color: yellow;
+                color: black;
+            }
+/*-----------------------------------------------*/
+
+/*-----------------------------------------------*/
+        table, th, td {
+            border-collapse: collapse;
+            padding: 30px;
+            font-family: 'Alice', serif;
+            letter-spacing: 2px
+        }
+
+        th {
+            background-color: Yellow;
+            color: black;
+            font-size: 28px
+        }
+
+        tr {
+            font-size: 25px
+        }
+
+            tr:nth-child(odd) {
+                background-color: lightgray;
+            }
+
+        table {
+            width: 100%;
+            text-align: center;
+            border: 3px solid black;
+        }
+/*-----------------------------------------------*/
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button class="button" onclick="document.location='C:/Users/Admin/Desktop/DSE/4.%20WD211/Project%20v3/index.html'"><span>HOME</span></button>
+        <button class="button" onclick="document.location='Overview.html'"><span>OVERVIEW</span></button>
+        <button class="button" onclick="document.location='About.html'"><span>ABOUT</span></button>
+        <button class="button" onclick="document.location='Contact.html'"><span>CONTACT</span></button>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Working Hours</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>9am - 5pm</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>9am - 5pm</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>9am - 5pm</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>9am - 5pm</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>9am - 5pm</td>
+            </tr>
+            <tr>
+                <td>Satarday</td>
+                <td>9am - 5pm</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>9am - 5pm</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

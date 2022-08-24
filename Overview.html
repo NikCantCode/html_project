@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Overview</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\Admin\Desktop\DSE\4. WD211\Project v3/Untitled-1.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <style>
+        /*-----------------------------------------------*/
+        
+        .header {
+            background-color: white;
+            text-align: center;
+            padding: 80px 20px 50px 20px;
+        }
+        /*     contact area     */
+        
+        .container {
+            height: auto;
+            position: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        /*-----------------------------------------------*/
+        /*-----------------------------------------------*/
+        
+        .button {
+            font-family: 'Alice', serif;
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 22px;
+            margin: 10px 12px;
+            cursor: pointer;
+            background-color: white;
+            list-style: none;
+            padding: 5px;
+            width: 256px;
+            letter-spacing: 2px
+        }
+        /*     for button effect     */
+        /*     button go left     */
+        
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        /*     for > come out     */
+        
+        .button span:after {
+            content: '\203A';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+        }
+        
+        .button:hover span {
+            padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        /*     button hover effect     */
+        
+        .button:hover {
+            background-color: yellow;
+            color: black;
+        }
+        /*-----------------------------------------------*/
+        /*-----------------------------------------------*/
+        
+        img {
+            margin: 40px;
+            height: 550px;
+            width: auto;
+        }
+        /*-----------------------------------------------*/
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <button class="button" onclick="document.location='index.html'"><span>HOME</span></button>
+            <button class="button" onclick="document.location='Overview.html'"><span>OVERVIEW</span></button>
+            <button class="button" onclick="document.location='About.html'"><span>ABOUT</span></button>
+            <button class="button" onclick="document.location='Contact.html'"><span>CONTACT</span></button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="IMG/DSC_8196-Edit-Edit-Edit.jpg" alt="">
+        <img src="IMG/DSC_8709-Edit-Edit-Edit.jpg" alt="">
+        <img src="IMG/DSC_8887-Edit-Edit-Edit.jpg" alt="">
+        <img src="IMG/DSC_4015-Edit-2.jpg" alt="">
+        <img src="IMG/DSC_9185.jpg" alt="">
+        <img src="IMG/DSC_9080-Edit-Edit.jpg" alt="">
+    </div>
+</body>
+
+</html>

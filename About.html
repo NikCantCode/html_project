@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>About_Me</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="C:\Users\Admin\Desktop\DSE\4. WD211\Project v3/Untitled-1.jpg">
+    <!-- google font import-->
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <style>
+        /*-----------------------------------------------*/
+        
+        .header {
+            background-color: white;
+            text-align: center;
+            padding: 80px 20px 50px 20px;
+        }
+        
+        .container {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: auto;
+            width: 1300px
+        }
+        /*-----------------------------------------------*/
+        /*-----------------------------------------------*/
+        /*     basic button box     */
+        
+        .button {
+            font-family: 'Alice', serif;
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 22px;
+            margin: 10px 12px;
+            cursor: pointer;
+            background-color: white;
+            list-style: none;
+            padding: 5px;
+            width: 256px;
+            letter-spacing: 2px
+        }
+        /*     for button effect     */
+        /*     button go left     */
+        
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        /*     for > come out     */
+        
+        .button span:after {
+            content: '\203A';
+            /* unicode for > */
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+        }
+        
+        .button:hover span {
+            padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        /*     button hover effect     */
+        
+        .button:hover {
+            background-color: yellow;
+            color: black;
+        }
+        /*-----------------------------------------------*/
+        /*-----------------------------------------------*/
+        
+        #img {
+            float: left;
+            width: 500px;
+            height: auto;
+            margin: 40px 40px 10px 40px;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            float: left;
+            width: 105px;
+            padding: 10px;
+            margin-top: 10px
+        }
+        
+        #imgsocial {
+            display: inline-block;
+        }
+        
+        li:hover {
+            background-color: yellow;
+            color: black;
+            cursor: pointer
+        }
+        /*-----------------------------------------------*/
+        /*-----------------------------------------------*/
+        /*     blcokquote box     */
+        
+        .box {
+            float: right;
+            width: 40%;
+            height: auto;
+            padding: 20px;
+            margin: 20px 40px 10px 40px;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Alice', serif;
+            line-height: 1.6;
+            letter-spacing: 2px
+        }
+        
+        blockquote {
+            font-family: 'Playfair Display', serif;
+            float: right;
+            text-align: right;
+            font-weight: bold;
+            font-size: 35px;
+            height: auto;
+            line-height: 1.6;
+            letter-spacing: 2px;
+            padding: 20px;
+            width: 40%;
+            margin: 20px 40px 10px 40px;
+        }
+        
+        p1 {
+            font-size: 21px
+        }
+        
+        mark {
+            background-color: yellow
+        }
+        /*-----------------------------------------------*/
+    </style>
+</head>
+
+<body>
+    <!-- main navigation bar -->
+    <div class="header">
+        <button class="button" onclick="document.location='index.html'"><span>HOME</span></button>
+        <button class="button" onclick="document.location='Overview.html'"><span>OVERVIEW</span></button>
+        <button class="button" onclick="document.location='About.html'"><span>ABOUT</span></button>
+        <button class="button" onclick="document.location='Contact.html'"><span>CONTACT</span></button>
+    </div>
+
+    </div>
+    <div class="container">
+        <!-- photo -->
+        <div><img id="img" src="IMG/profile.jpg" alt=""></div>
+        <!-- quote -->
+        <blockquote> “ The Picture That You <br /> Took With Your Camera Is <br />The Imagination You Want <br />To Create With Reality. ”</blockquote>
+        <!-- main -->
+        <div class="box">
+            <p1>About Me</p1>
+            <p>My name is Leong Jiunn Haur.<br> I am 26 years of age. I live in Kepong, a town in northern Kuala Lumpur, Malaysia. I used to be a graphic designer for 4 years. I enjoy the past 4 years of work, which for the most part I can do my design with
+                less to no restriction, which I am grateful about it. But with the unexpected pandemic, I reflect on my future goal during all the MCO and decided to improve myself by taking a course for myself.</p>
+            <p1>The Idea</p1>
+            <p>The project task is about myself. But with only so much I can tell about myself, I feel like I would change the task to <mark>about me and my hobby</mark>, which is being a photographer, mainly as a <mark>motosport photographer.</mark></p>
+            <p>I create this website for my final project for the web application design course. I started designing this after checkpoint 1, Nov 22, 2021. With the knowledge of the first webpage, which I design back in checkpoint 1, and <mark>with the help of all the lessons I learned after</mark>                , I have been able to create a more complex design that suits my <mark>style and idea : clean and simple.  </mark></p>
+        </div>
+        <!-- list navigation bar for social tab-->
+        <div>
+            <ul>
+                <li>
+                    <a href="https://www.google.com/" target="_blank"><img id="imgsocial" src="IMG/fb.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/" target="_blank"><img id="imgsocial" src="IMG/tw.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/" target="_blank"><img id="imgsocial" src="IMG/wa.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/" target="_blank"><img id="imgsocial" src="IMG/in.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
